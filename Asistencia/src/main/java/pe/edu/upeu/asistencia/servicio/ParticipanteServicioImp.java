@@ -2,7 +2,7 @@ package pe.edu.upeu.asistencia.servicio;
 
 import org.springframework.stereotype.Service;
 import pe.edu.upeu.asistencia.modelo.Participante;
-import pe.edu.upeu.asistencia.modelo.repositorio.ParticipanteRepositorio;
+import pe.edu.upeu.asistencia.repositorio.ParticipanteRepositorio;
 
 import java.util.List;
 

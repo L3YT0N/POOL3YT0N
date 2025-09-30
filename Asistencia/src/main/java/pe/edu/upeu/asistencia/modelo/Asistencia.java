@@ -1,17 +1,13 @@
 package pe.edu.upeu.asistencia.modelo;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.StringProperty;
+import lombok.Data;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
+@Data
 public class Asistencia {
-    private String nombre;
-    private String estado;
+    private StringProperty nombre;
+    private BooleanProperty estado;
+
 
 }

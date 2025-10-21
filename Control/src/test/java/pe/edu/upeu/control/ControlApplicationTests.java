@@ -1,10 +1,10 @@
-package pe.edu.pe.registro.de.ingreso;
+package pe.edu.upeu.control;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RegistroDeIngresoApplicationTests {
+class ControlApplicationTests {
 
 	@Test
 	void contextLoads() {

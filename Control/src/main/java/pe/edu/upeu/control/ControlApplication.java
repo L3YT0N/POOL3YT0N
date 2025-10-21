@@ -1,13 +1,13 @@
-package pe.edu.pe.registro.de.ingreso;
+package pe.edu.upeu.control;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RegistroDeIngresoApplication {
+public class ControlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RegistroDeIngresoApplication.class, args);
+		SpringApplication.run(ControlApplication.class, args);
 	}
 
 }

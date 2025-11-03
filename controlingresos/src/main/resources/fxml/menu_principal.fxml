@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controlingresos.controller.MenuPrincipalController"
+            prefWidth="600" prefHeight="400">
+
+    <top>
+        <Label text="🏢 Sistema de Control de Ingreso"
+               style="-fx-font-size: 20; -fx-font-weight: bold; -fx-padding: 10;"/>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Button text="Control de Ingreso" onAction="#abrirControlIngreso" prefWidth="200"/>
+            <Button text="Gestión de Trabajadores" onAction="#abrirGestionTrabajadores" prefWidth="200"/>
+            <Button text="Cerrar Sesión" onAction="#cerrarSesion" prefWidth="200"/>
+        </VBox>
+    </center>
+</BorderPane>

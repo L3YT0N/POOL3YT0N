@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controlingresos.controller.GestionTrabajadoresController"
+            prefWidth="750" prefHeight="550">
+
+    <VBox spacing="10" padding="20" alignment="TOP_CENTER">
+        <Label text="👷‍♂️ Gestión de Trabajadores"
+               style="-fx-font-size: 22; -fx-font-weight: bold;" />
+
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="DNI:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtDni" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Nombre:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtNombre" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Área:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtArea" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <HBox spacing="10" alignment="CENTER" GridPane.rowIndex="3" GridPane.columnIndex="1">
+                <Button text="Registrar" fx:id="btnRegistrar" onAction="#registrarTrabajador"/>
+                <Button text="Eliminar" fx:id="btnEliminar" onAction="#eliminarTrabajador"/>
+                <Button text="Actualizar" fx:id="btnActualizar" onAction="#actualizarTabla"/>
+            </HBox>
+        </GridPane>
+
+        <Label text="Lista de Trabajadores Activos:"
+               style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+
+        <TableView fx:id="tablaTrabajadores" prefWidth="700" prefHeight="300">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colDni" text="DNI" prefWidth="100"/>
+                <TableColumn fx:id="colNombre" text="Nombre" prefWidth="200"/>
+                <TableColumn fx:id="colArea" text="Área" prefWidth="200"/>
+                <TableColumn fx:id="colActivo" text="Activo" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

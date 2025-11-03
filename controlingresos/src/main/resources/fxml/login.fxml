@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controlingresos.controller.LoginController"
+            prefWidth="400" prefHeight="300">
+    <VBox spacing="10" alignment="CENTER" padding="30">
+        <Label text="🔐 Sistema de Control de Ingreso" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+        <Label text="Usuario:"/>
+        <TextField fx:id="txtUsuario" prefWidth="200"/>
+        <Label text="Contraseña:"/>
+        <PasswordField fx:id="txtPassword" prefWidth="200"/>
+        <Button text="Iniciar Sesión" onAction="#iniciarSesion"/>
+        <Label fx:id="lblMensaje" textFill="red"/>
+    </VBox>
+</AnchorPane>

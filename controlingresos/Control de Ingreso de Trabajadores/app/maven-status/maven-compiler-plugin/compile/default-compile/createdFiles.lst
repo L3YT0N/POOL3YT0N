@@ -1,0 +1,15 @@
+com\example\controlingresos\service\UsuarioService.class
+com\example\controlingresos\model\Usuario.class
+com\example\controlingresos\controller\ControlIngresoController.class
+com\example\controlingresos\model\Trabajador.class
+com\example\controlingresos\controller\MenuPrincipalController.class
+com\example\controlingresos\service\RegistroAccesoService.class
+com\example\controlingresos\service\TrabajadorService.class
+com\example\controlingresos\repository\TrabajadorRepository.class
+com\example\controlingresos\JavaFxLauncher.class
+com\example\controlingresos\repository\UsuarioRepository.class
+com\example\controlingresos\controller\GestionTrabajadoresController.class
+com\example\controlingresos\repository\RegistroAccesoRepository.class
+com\example\controlingresos\ControlIngresosApplication.class
+com\example\controlingresos\model\RegistroAcceso.class
+com\example\controlingresos\controller\LoginController.class

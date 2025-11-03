@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controlingresos.controller.ControlIngresoController"
+            prefWidth="750" prefHeight="550">
+
+    <VBox spacing="10" alignment="TOP_CENTER" padding="20">
+        <Label text="🧾 Control de Ingreso de Trabajadores"
+               style="-fx-font-size: 22; -fx-font-weight: bold;"/>
+
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="DNI del trabajador:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtDni" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Observación:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtObservacion" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <HBox spacing="10" alignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <Button text="Registrar Ingreso" fx:id="btnIngreso" onAction="#registrarIngreso"/>
+                <Button text="Registrar Salida" fx:id="btnSalida" onAction="#registrarSalida"/>
+            </HBox>
+        </GridPane>
+
+        <Label text="Registros recientes:" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+        <TableView fx:id="tablaAccesos" prefWidth="700" prefHeight="300">
+            <columns>
+                <TableColumn fx:id="colTrabajador" text="Trabajador" prefWidth="150"/>
+                <TableColumn fx:id="colDni" text="DNI" prefWidth="100"/>
+                <TableColumn fx:id="colIngreso" text="Hora Ingreso" prefWidth="150"/>
+                <TableColumn fx:id="colSalida" text="Hora Salida" prefWidth="150"/>
+                <TableColumn fx:id="colObservacion" text="Observación" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

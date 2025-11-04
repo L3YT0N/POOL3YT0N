@@ -36,9 +36,11 @@ public class SysVentasApplication  extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		Screen screen = Screen.getPrimary();
-		Rectangle2D bounds = screen.getVisualBounds();
-		stage.setScene(new Scene(parent, bounds.getWidth(),bounds.getHeight()-100));
+		//Screen screen = Screen.getPrimary();
+		//Rectangle2D bounds = screen.getVisualBounds();
+		//stage.setScene(new Scene(parent, bounds.getWidth(),bounds.getHeight()-100));
+		Scene scene = new Scene(parent);
+		stage.setScene(scene);
 		stage.setTitle("SysVentas SysCenterLife");
 		stage.show();
 	}
